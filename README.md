@@ -17,7 +17,7 @@ Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science
     -   [✅] Commit: `Create Notification service struct skeleton.`
     -   [✅] Commit: `Implement subscribe function in Notification service.`
     -   [✅] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
+    -   [✅] Commit: `Implement unsubscribe function in Notification service.`
     -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
     -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
