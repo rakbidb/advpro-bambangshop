@@ -19,7 +19,7 @@ Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science
     -   [✅] Commit: `Implement subscribe function in Notification controller.`
     -   [✅] Commit: `Implement unsubscribe function in Notification service.`
     -   [✅] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [✅] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -47,5 +47,18 @@ This is the place for you to write reflections:
     In BambangShop case, both DashMap and Singleton Pattern is used. Singleton is used because we don't need multiple database/repository instance for the app. DashMap is used because it is a data structure that is thread safe and is suitable for multithreading.
 
 #### Reflection Publisher-2
+
+1. In the Model-View Controller (MVC) compound pattern, there is no “Service” and “Repository”. Model in MVC covers both data storage and business logic. Explain based on your understanding of design principles, why we need to separate “Service” and “Repository” from a Model?
+
+    We need to separate service and repository from a model because it aligns with the Single Responsibility Principle (SRP) and also Open-Closed Principle. By separating service and repository, each module has its own responsibility. Also, if we don't separate them it will be harder to modify the code without breaking the code (Open-Closed Principle)
+
+
+2. What happens if we only use the Model? Explain your imagination on how the interactions between each model (Program, Subscriber, Notification) affect the code complexity for each model?
+
+    The code will be more complex since it will contain of the combination of model, service, and repository in a file/module. The code's maintainability and reusability will decrease and will violate the SOLID principle. 
+
+3. Have you explored more about Postman? Tell us how this tool helps you to test your current work. You might want to also list which features in Postman you are interested in or feel like it is helpful to help your Group Project or any of your future software engineering projects.
+
+    Postman is a very helpful tool to test the backend part of a project. I have known and used Postman since last semester and will most likely keep using it for future projects. I can test the API easily, make and save a custom configuration (like which url or which HTTP method used)
 
 #### Reflection Publisher-3
