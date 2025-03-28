@@ -8,7 +8,7 @@ Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science
 -   **STAGE 1: Implement models and repositories**
     -   [✅] Commit: `Create Subscriber model struct.`
     -   [✅] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
+    -   [✅] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
     -   [ ] Commit: `Implement add function in Subscriber repository.`
     -   [ ] Commit: `Implement list_all function in Subscriber repository.`
     -   [ ] Commit: `Implement delete function in Subscriber repository.`
