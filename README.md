@@ -25,7 +25,7 @@ Tutorial and Example for Advanced Programming 2024 - Faculty of Computer Science
     -   [✅] Commit: `Implement notify function in Notification service to notify each Subscriber.`
     -   [✅] Commit: `Implement publish function in Program service and Program controller.`
     -   [✅] Commit: `Edit Product service methods to call notify after create/delete.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
+    -   [✅] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -62,3 +62,15 @@ This is the place for you to write reflections:
     Postman is a very helpful tool to test the backend part of a project. I have known and used Postman since last semester and will most likely keep using it for future projects. I can test the API easily, make and save a custom configuration (like which url or which HTTP method used)
 
 #### Reflection Publisher-3
+
+1. Observer Pattern has two variations: Push model (publisher pushes data to subscribers) and Pull model (subscribers pull data from publisher). In this tutorial case, which variation of Observer Pattern that we use?
+
+    In BambangShop case, the model used is push model. That's because every time a product is created/deleted, or if there's a new promotion, the app notifies the subscriber by "pushing" notifications.
+
+2. What are the advantages and disadvantages of using the other variation of Observer Pattern for this tutorial case? (example: if you answer Q1 with Push, then imagine if we used Pull)
+
+    The disadvantage of using the pull model in this case is that the Observer/Subscriber must be active in asking/requesting update from the Publisher. The notification or information received by the Subscriber might not be the up to date information. Meanwhile, by using the push model, the subscribers are guaranteed to receive the up to date information sent by the Publisher. However, by using the pull method, the subscribers might be able to choose which publisher to listen to, and when to get the updates from the publisher. Also, in pull model, instead of the publisher having the list of subscribers to send notification to, it will be the subscribers that need to save the list of publisher they want to listen to.
+
+3. Explain what will happen to the program if we decide to not use multi-threading in the notification process.
+
+    If we don't use multi-threading in the notification process, there will be a long queue to process the notification delivery to each subscribers. That's because to send to another subscriber, we must wait for the system to send the notification to the current subscriber first, then to the next one, an so on. By using multi-threading, the notification delivery can be done asynchrounously.
